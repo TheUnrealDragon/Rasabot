@@ -1,0 +1,198 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - fine
+- intent: goodbye
+  examples: |
+    - bye
+    - thank you
+    - thanks
+    - by
+    - thanks a lot
+    - ok bye
+- intent: Payment
+  examples: |
+    - issue of [Payment](issue_type)
+    - [payment](issue_type) not updated.
+    - i have an issue of loan [Payment](issue_type).
+    - i have made the [Payment](issue_type) but it is not showing.
+    - i have already [Paid](issue_type) my loan installment.
+    - i have made a timely  [Payment](issue_type) but still not updated.
+- intent: PerLoan
+  examples: |
+    - issue of Personal loan
+    - personal loan not updated
+    - Personal Loan still not updated
+    - i made a payment of my personal loan which is not updated.
+    - PerLoan
+    - Persloan
+    - perloan
+- intent: DevLoan
+  examples: |
+    - issue of Device loan
+    - device  loan not updated
+    - My device loan issue is not solved.
+    - i made a payment of my device loan loan which is not updated.
+    - DevLoan
+    - devloan
+    - Devloan
+- intent: DeviceLoan
+  examples: |
+    - charge review of Device loan
+    - device  loan charge issue
+    - My device loan has a charge review issue
+    - DeviceLoan
+    - deviceloan
+    - Deviceloan
+- intent: PersonalLoan
+  examples: |
+    - charge review of Personal loan
+    - personal  loan charge issue
+    - My Personal loan has a charge review issue
+    - personalloan
+    - PersonalLoan
+    - Personalloan
+- intent: Bounce
+  examples: |
+    - Review my [bounce](issue_type) charge
+    - Penal and [Bounce](issue_type) charge
+    - Bounce
+    - Penal
+- intent: Human
+  examples: |
+    - [Human](issue_type)
+- intent: Extra
+  examples: |
+    - I paid [extra](issue_type) charge Emi
+    - I paid [Extra](issue_type) charge charges
+    - Extra
+    - extra
+- intent: Uninstall
+  examples: |
+    - I want to [uninstall](issue_type) the application.
+    - i want to [Uninstall](issue_type) app.
+    - my loan payments are completed. can i uninstall this app?
+    - i have paid all of my emi
+    - i have paid emi form my loan.
+    - my loan emi have been completed.
+    - can i delete this application now?
+    - i have completed my payments.
+    - [Uninstall](issue_type)
+    - [uninstall](issue_type)
+- intent: Locked
+  examples: |
+    - My device is [Locked](issue_type)
+    - My phone is [locked](issue_type)
+    - My tablet is [Locked](issue_type)
+    - i am not able to access my phone.
+    - i am not able to access my tablet.
+    - how to unlock my device?
+    - how to unlock my phone?
+    - i am not able to use my phone.
+    - i am not able to make a call in my phone.
+    - Locked
+    - locked
+- intent: Different
+  examples: |
+    - I have a issue [different](issue_type)
+    - My problem is [Different](issue_type)
+    - i have another issue.
+    - Different
+    - [different](issue_type)
+- intent: Yes
+  examples: |
+    - Yes
+    - yes
+- intent: No
+  examples: |
+    - No
+    - no
+- intent: Emi
+  examples: |
+    - [emi](issue_type) not paid.
+    - [Emi](issue_type)
+    - i have an issur with my [Emi](issue_type) payment.
+    - i have doubts regarding the payment of my [Emi](issue_type).
+- intent: DOP
+  examples: |
+    - i paid on [15/02/2021](Date)
+    - it was paid on [13/02/2021](Date)
+    - [15/02/2021](Date)
+- intent: charge_review_date
+  examples: |
+    - i paid my charge on [15-02-2021](CRD)
+    - [11-11-1111](CRD)
+    - [15-02-2021](CRD)
+- intent: charge_review_amount
+  examples: |
+    - i paid  Rs[6000](CRA)
+    - Amount paid was [5000](CRA)
+    - [250](CRA)
+- intent: PID
+  examples: |
+    - My id is [pid1234](pid)
+    - The id is [pid5454](pid)
+    - [pid9999](pid)
+    - [pid5678](pid)
+- intent: SF
+  examples: |
+    - [SF](mop)
+    - My mode of payment was Samsung Finance.
+- intent: Paytm
+  examples: |
+    - [Paytm](mop)
+    - i paid through [Paytm](mop).
+- intent: Gpay
+  examples: |
+    - [Gpay](mop)
+    - i paid through [Gpay](mop)
+- intent: Phonepe
+  examples: |
+    - [Phonepe](mop)
+    - i paid through [Phonepe](mop)
+- intent: Airtel
+  examples: |
+    - [Airtel](mop)
+    - i paid through [Airtel](mop)
+- intent: UPI
+  examples: |
+    - [UPI](mop)
+    - I paid through Bhim [UPI](mop).
+    - Another [UPI](mop) service
+- intent: out_of_scope
+  examples: |
+    - i want to buy a new device
+    - my phone screen has broken
+    - i want to return the device
+- intent: Nachmandate
+  examples: |
+    - Nach mandate was not bounced
+    - Nach mandate did not bounce
+    - nach mandate
+- intent: Notdeducted
+  examples: |
+    - Money was not deducted from bank
+    - did not get confirmation of money detection
+    - amount was not deducted from bank
+- intent: Yes_review
+  examples: |
+    - Yes, i still want to review
+    - yes, i want to review
+    - i want to review
+- intent: mood_unhappy
+  examples: |
+    - payment issue
